@@ -39,6 +39,8 @@ class LogInContainer extends Component {
     }
   }
 
+  // NOT WORKING - HTTP Origin header (http://localhost:3000) 
+  // didn't match request.base_url (http://localhost:3001)
   // function for form submission API call
   createAccount = async () => {
     fetch(`http://localhost:3001/signup`, {
