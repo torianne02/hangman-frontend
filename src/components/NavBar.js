@@ -15,6 +15,11 @@ const NavBar = () => {
       <NavbarBrand href="/">
         <img src={hangman} alt="hangman logo" />
       </NavbarBrand>
+      <Nav className="nav">
+        <NavItem>
+          <NavLink tag={Link} to="/login">Log In</NavLink>
+        </NavItem>
+      </Nav>
     </Navbar>
   );
 }
