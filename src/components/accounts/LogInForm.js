@@ -22,6 +22,8 @@ const LogInForm = props => {
               onChange={ props.handleOnChange }
               value={ props.initialsValue } />
           </FormGroup>
+        </Col>
+        <Col>
           <FormGroup>
             <Label for="password" hidden>Password</Label>
             <Input type="text"
@@ -31,6 +33,7 @@ const LogInForm = props => {
               value={ props.passwordValue } />            
           </FormGroup>
         </Col>
+        <Button>Submit</Button>
       </Form>
     </Container>
   )
