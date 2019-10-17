@@ -2,7 +2,7 @@ import React from 'react';
 import hangman from './images/hangman.png'
 import './App.css';
 import NavBar from './components/NavBar';
-import LogInContainer from './containers/LogInContainer';
+import SignUpContainer from './containers/SignUpContainer';
 import { 
   BrowserRouter as Router,
   Route,
@@ -15,7 +15,7 @@ const App = () => {
       <div className="App">
         <NavBar />
         <Switch>
-          <Route exact path="/login" component={LogInContainer} />
+          <Route exact path="/signup" component={SignUpContainer} />
         </Switch>
       </div>
     </Router>

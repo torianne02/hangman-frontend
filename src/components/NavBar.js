@@ -17,7 +17,7 @@ const NavBar = () => {
       </NavbarBrand>
       <Nav className="nav">
         <NavItem>
-          <NavLink tag={Link} to="/login">Log In</NavLink>
+          <NavLink tag={Link} to="/signup">Sign Up</NavLink>
         </NavItem>
       </Nav>
     </Navbar>
