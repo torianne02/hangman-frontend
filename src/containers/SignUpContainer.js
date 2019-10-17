@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import LogInForm from '../components/accounts/LogInForm';
+import AccountForm from '../components/accounts/AccountForm';
 
-class LogInContainer extends Component {
+class SignUpContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -59,8 +59,8 @@ class LogInContainer extends Component {
   render() {
     return (
       <div className="login-form">
-        <h1>LOG IN</h1>
-        <LogInForm
+        <h1>SIGN UP</h1>
+        <AccountForm
           initialsValue={ this.state.initials }
           passwordValue={ this.state.password }
           handleOnChange={ this.handleOnChange }
@@ -71,4 +71,4 @@ class LogInContainer extends Component {
   }
 }
 
-export default LogInContainer
+export default SignUpContainer
